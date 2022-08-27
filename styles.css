@@ -508,7 +508,7 @@ background-repeat: norepeat;
    }
    
    .section__title {
-       font-size: 28px;
+       font-size: 1.3em;
        margin-bottom: var(--mb-2);
        font-family: sans-serif;
        text-align: center;
