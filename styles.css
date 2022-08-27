@@ -616,9 +616,9 @@ background-repeat: norepeat;
     .nav__list {
         display: flex;
         text-transform: uppercase;
-        line-height: 29px;
+        line-height: 5vh;
         margin-top: -11vh;
-        margin-left: 100px;
+        margin-left: 20vw;
         height: 21vh;
         flex-direction: column;
     }
@@ -892,10 +892,10 @@ background-repeat: norepeat;
     
     .trick__title,
     .trick__price {
-        color: midnightblue;
+        color: #404040;
         font-weight: 400;
         line-height: 14px;
-        font-size: 18px;
+        font-size: 17px;
     }
     
     .trick__button {
