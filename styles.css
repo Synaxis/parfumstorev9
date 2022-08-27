@@ -514,9 +514,12 @@ background-repeat: norepeat;
     }
     
     .section__title {
-        font-size: var(--h2-font-size);
+        font-size: 28px;
         margin-bottom: var(--mb-2);
+        font-family: sans-serif;
         text-align: center;
+        font-weight: 400;
+        letter-spacing: -1px;
     }
     
     /* ================ LAYOUT ===================*/
@@ -1174,13 +1177,13 @@ background-repeat: norepeat;
     
     /*================== SCROLL BAR =====================*/
     ::-webkit-scrollbar {
-        width: -1.4rem;
+        width: 16px;
         background: #ffffff;
     }
     
     ::-webkit-scrollbar-thumb {
-        background: #272525;
-        border-radius: .5rem;
+        background: #aaaaaa;
+        border-radius: 4px;
     }
     /*=================== BREAKPOINTS ===================*/
     
