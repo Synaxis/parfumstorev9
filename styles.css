@@ -1,42 +1,3 @@
-header > nav > div {
-  display: flex;
-  position: relative;
-
-}
-
-header > nav > div > ul > li {
-   flex: 1;
-  display: flex;
-  text-align: center;
-  transition: background-color 0.5s ease;
-
-}
-
-header > nav > div > ul > li > a {
-
- flex: 1;
-  justify-content: center;
-  display: inline-flex;
-  color: #ffffff;
-  text-decoration: none;
-  padding: -1px;
-  position: relative;
-
-}
-
-a.nav__link {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-a.nav__logo {  
-    font-weight: 500;
-    font-size: 1.6em;
-    margin-left: -3vw;
-    
-}
-
-
 body {
      background-image: url(img/fundo.jpg);
 background-repeat: norepeat;
@@ -47,7 +8,6 @@ background-repeat: norepeat;
 }
 
 a.nav__link {
-  font-size: 1em;  
 }
 
 header {
@@ -97,7 +57,7 @@ background-repeat: norepeat;
   
   
   .nav__list > li > a {
-    margin: 4px;
+    margin: -4px;
     border: 0px;
   }
   
@@ -376,7 +336,7 @@ background-repeat: norepeat;
       }
     /*=================== VARIABLES CSS =======================*/
     :root {
-        --header-height: 3.5rem;
+        --header-height: 7.5rem;
         background-image: url("img/fundo.jpg");
         background-repeat: no-repeat;
         /*=============== Colors =============*/
@@ -576,7 +536,7 @@ background-repeat: norepeat;
         background: #7874ee;
         position: fixed;
         top: 0;
-        height: 13vh;
+        height: 12vh;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         left: 0;
         z-index: var(--z-fixed);
@@ -1210,7 +1170,7 @@ background-repeat: norepeat;
     
     /*================== SCROLL BAR =====================*/
     ::-webkit-scrollbar {
-        width: 0.6rem;
+        width: -1.4rem;
         background: #ffffff;
     }
     
