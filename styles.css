@@ -614,9 +614,12 @@ background-repeat: norepeat;
     
     .nav__list {
         display: flex;
+        text-transform: uppercase;
+        line-height: 29px;
+        margin-top: -6vh;
+        margin-left: 118px;
+        height: 21vh;
         flex-direction: column;
-        flex-wrap: wrap;
-        margin-top: 5vh;
     }
     
     .nav__link {
