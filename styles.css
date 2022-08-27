@@ -357,7 +357,7 @@ background-repeat: norepeat;
     
       --body-color: white;
       --container-color:
-        linear-gradient(136deg, hsl(265deg 15% 52% / 85%) 0%, hsl(296deg 39% 47%) 100%);
+        linear-gradient(136deg, hsl(265deg 15% 52% / 85%) 0%, hsl(55deg 100% 67%) 100%);
     
         /*================== Font and typography =============*/
         --body-font:
