@@ -1,792 +1,657 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<!--=========== FAVICON ============-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MizaShow Perfumes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .carousel-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
 
-<meta name="google" value="notranslate">
-<!--=========== BOXICONS ============-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        .carousel-item {
+            display: inline-block;
+            width: 150px;
+            transition: transform 0.3s ease-out;
+        }
 
-<!--=========== SWIPER CSS ============-->
-<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-<!--=========== CSS ============-->
-<link rel="stylesheet" href="assets/css/styles.css">
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-<title>MizaShow Perfumes</title>
-
+        .carousel-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        
+    nav.container.mx-auto.py-4.flex.justify-between.items-center {
+        background-color: blue;
+    }
+    
+    header.bg-blue.shadow-md {
+        background-color: blue;
+    
+    }
+    
+    a.text-xl.font-bold.text-gray-800 {
+      font-size: 2.2rem;
+      color: white
+    }
+    
+    a.text-xl.font-bold.text-gray-800:hover {
+      font-size: 2.4rem;
+    }
+    
+    
+    div.bg-white.shadow-lg.p-4.rounded.cursor-pointer {
+      border-radius: 10px;
+    }
+    
+    </style>
 </head>
-<body style=" -webkit-font-smoothing: subpixel-antialiased;
--moz-osx-font-smoothing: auto;
-box-sizing: border-box;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-text-rendering: optimizeLegibility;">
 
-<!--========================== HEADER =========================-->
-<header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img src="images/logo.png" alt="" class="nav__logo-img">
-                    Mizashow
-                </a>
-
-                <div class="nav__menu" id="nav-menu">
-                   <ul class="nav__list">
-   
-   <li class="nav__item">
-   <a href="#trick" class="nav__link active-link">Perfumes</a>
-   </li>
-   <li class="nav__item">
-   <a href="https://armi5338416.mercadoshops.com.br/nossos-produtos" class="nav__link">MercadoLivre</a>
-   </li>
-   
-   <li class="nav__item">
-   <a href="https://linktr.ee/mizashow" class="nav__link">Redes Sociais</a>
-   </li>
-   
-   <li class="nav__item">
-   <a href="https://linktr.ee/mizashow" class="nav__link">Encomenda</a>
-   </li>
-   
-   <li class="nav__item">
-   <a href="https://www.mercadolivre.com.br/perfil/ARMI5338416" class="nav__link">Ofertas!</a>
-   </li>
-   </ul>
-   
-
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x'></i>
-                    </div>
-
-                    <img src="assets/img/nav-img.png" alt="" class="nav__img">
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-
-            </nav>
-        </header>
-
-
-<main class="main">
-
-<!--================= HOME =======================-->
-<section class="home container" id="home">
-
-<div class="js-Carousel" id="carousel">
-
-<ul>
-   <li><img src="img/midnight.png" alt=""></li>
-       <li><img src="img/kit2.png" alt=""></li>
-<li><img src="img/goodgirl.png" alt=""></li>
-   <li><img src="img/oso.png" alt=""></li>
-   <li><img src="img/one.png" alt=""></li>
-      <li><img src="img/fairy.png" alt=""></li>
-
-       <li><img src="img/clube420.png" alt=""></li>
-   <li><img src="img/azzarosport.png" alt=""></li>
-
-   <li><img src="img/ferrarired.png" alt=""></li>
-   <li><img src="img/coeur.png" alt=""></li>
-</ul>
-
-</div>
-</section>
-
-
-
-<script src="carousel.js"></script>
-<script>
-var carousel = new Carousel({
-elem: 'carousel',
-dots: true,
-arrows: false,
-buttons: false,
-autoplay: true,
-infinite: true
-});
-</script> 
-     <section class="" id="sobre">
-<h2 class="section__title">As melhores ofertas !</h2>
-<h2 class="section__title">Entregas para todo o Brasil. basta clicar no perfume ;)</h2>
-
-</section> 
-
-<h2 class="section__title">Perfumes Internacionais</h2>
-
-<br><br><br><br><br><br>
-<h2 class="section__title"><a href="nacionais.html" >Perfumes Nacionais Click aqui</a></h2>
-<!--==================== Perfumes ====================-->
-<section class="section trick" id="trick">
-   <div></div>
-
-   <div></div>
-   <div class="perfume__container grid">
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2746701357-paco-rabanne-1-miller-edt-200-ml-para-homens-_JM', '_blank');"
-   
-   src="img/one.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">One Million Pacco Rabanne 200ml</h3>
-   </div>
-   
-   
-   <div class="trick__content">
-    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2856268710-idle-l-parfum-lancme-75-ml-_JM', '_blank');"
-    src="img/idole.png"
-    alt=""
-    class="trick__img"
-    />
-    <h3 class="trick__title">Idole Le Parfume Lancome 75 Ml</h3>
-    </div>
-    
-
-    <div class="trick__content">
-    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/calvin-klein-ck-everyone-edt-200ml-para-sem-gnero/p/MLB19050899', '_blank');"
-    src="img/calvin.png"
-    alt=""
-    class="trick__img"
-    />
-    <h3 class="trick__title">Calvin Klein CK Everyone EDT 200Ml</h3>
-    </div>
-
-
-   <div class="trick__content">
-    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2854212677-perfume-cool-water-125-ml-_JM', '_blank');"
-    src="img/cool.png"
-    alt=""
-    class="trick__img"
-    />
-    <h3 class="trick__title">Perfume Cool Water 125 Ml</h3>
-    </div>
-
-    <div class="trick__content">
-      <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-1961555227-perfume-fantasy-britney-spears-_JM', '_blank');"
-      src="img/britney.png"
-      alt=""
-      class="trick__img"
-      />
-      <h3 class="trick__title">Britney Spears Fantasy</h3>
-      </div>
-    
-      <div class="trick__content">
-        <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2854251018-perfume-her-secret-kiss-80-ml-_JM', '_blank');"
-        src="img/hersecret3.png"
-        alt=""
-        class="trick__img"
-        />
-        <h3 class="trick__title">Her Secret Kiss! 80ML</h3>
-        </div>
-
-        <div class="trick__content">
-          <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/yves-saint-laurent-kouros-edt-100ml-para-homem/p/MLB6094029', '_blank');"
-          src="img/kouros.png"
-          alt=""
-          class="trick__img"
-          />
-          <h3 class="trick__title">Yves Saint Laurent Kouros EDT 100 ml</h3>
-          </div>
-
-          <div class="trick__content">
-            <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/montblanc-individuel-edt-75ml-para-homem/p/MLB3820215', '_blank');"
-            src="img/montblanc.png"
-            alt=""
-            class="trick__img"
-            />
-            <h3 class="trick__title">Montblanc Individuel EDT 75 Ml</h3>
+<body class="antialiased text-gray-900 bg-gray-100">
+    <header class="bg-blue shadow-md">
+        <nav class="container mx-auto py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">Mizashow</a>
+            <div class="space-x-6">
+                <a href="#trick" class="text-gray-700 hover:text-gray-900">Perfumes</a>
+                <a href="https://armi5338416.mercadoshops.com.br/nossos-produtos" class="text-gray-700 hover:text-gray-900">MercadoLivre</a>
+                <!-- Mais links aqui -->
             </div>
-
-            <div class="trick__content">
-              <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/animale-for-men-edt-100ml-para-masculino/p/MLB6166109', '_blank');"
-              src="img/animale.png"
-              alt=""
-              class="trick__img"
-              />
-              <h3 class="trick__title">Animale For Men 100Ml</h3>
-              </div>
-              
-
-                <div class="trick__content">
-                  <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2105573110-perfume-black-extreme-_JM', '_blank');"
-                  src="img/everlast.png"
-                  alt=""
-                  class="trick__img"
-                  />
-                  <h3 class="trick__title">Everlast Black Extreme+ Brinde</h3>
-                  </div>
+        </nav>
+    </header>
 
 
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2759839134-amor-amor-cacharel-100ml-mulher-_JM', '_blank');"
-   src="img/amor.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Amor Amor Cacharel 100ml</h3>
-   </div>
-   
-     <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2759839900-king-of-seduction-absolut-200-ml-homem-_JM', '_blank');"
-   src="img/king3.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">King Of Seduction Absolut 200 Ml</h3>
-   </div>
-   
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1817760613-perfumes-importados-da-linha-antnio-bandeira-original-_JM', '_blank');"
-   src="img/king.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">King Of Seduction 200ml</h3>
-   </div>
-   
-      <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2786855531-king-of-seduction-100-ml-homem-_JM', '_blank');"
-   src="img/king.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">King Of Seduction 100ml</h3>
-   </div>
-   
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2784650720-azzaro-sport-100-ml-homem-_JM', '_blank');"
-   src="img/azzarosport.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Azzaro Sport 100 Ml</h3>
-   </div>
-   
-     <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2770720993-azzaro-pour-homme-200-ml-_JM', '_blank');"
-   src="img/azzaro.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Azzaro pour Homme EDT 200 ml</h3>
-   </div>
-   
-      <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2746708531-carolina-herrera-good-girl-femininoedp-80-ml-_JM', '_blank');"
-   src="img/goodgirl.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Good Girl 80ml</h3>
-   </div>
-   
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2678924125-perfume-oso-perfect-men-100ml-_JM', '_blank');"
-   src="img/oso.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Perfume Oso Perfect Men 100ml</h3>
-   </div>
-   
-     <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2747348429-lancme-la-vie-est-belle-edp-75-mlmulher-_JM', '_blank');"
-   src="img/lavie.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">La Vie Est Belle Edp 75 Ml</h3>
-   </div>
-   
-     <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2747342902-carolina-herrera-212-vip-200-mlmasculino-_JM', '_blank');"
-   src="img/vip.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Carolina Herrera 212 Vip 200 Ml</h3>
-   </div>
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2652407384-perfume-silver-laght-100ml-_JM', '_blank');"
-   src="img/silverlight.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Perfume Silver Light 100ml</h3>
-   </div>
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2733437704-perfume-fantasy-midnight-100-ml-_JM', '_blank');"
-   src="img/midnight.png"
-   alt=""
-   class="trick__img"
-   />
-   <br><br>
-   <h3 class="trick__title">Perfume Fantasy Midnight 100 Ml</h3>
-   </div>
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2735459956-kit-the-golden-secret-p-100ml-d-150-ml-_JM', '_blank');"
-   src="img/kit2.png"
-   alt=""
-   class="trick__img"
-   /><br><br><br>
-   <h3 class="trick__title">Kit The Golden Secret 100ml 150 Ml</h3>
-   </div>
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-1817757815-promocoperfume-importado-antnio-bandeira-_JM', '_blank');"
-   src="img/silver2.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Antonio Banderas 100Ml</h3>
-   </div>
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/antonio-banderas-the-secret-edt-200ml-para-homem/p/MLB19175924', '_blank');"
-   src="img/silver2.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">200Ml Antonio Banderas </h3>
-   </div>
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1961549634-perfume-silver-scent-100-ml-intense-_JM', '_blank');"
-   src="img/scent.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Perfume Silver Scent Intense 100 Ml</h3>
-   </div>
-   
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2678967214-perfume-clube-420-gold-100-ml-_JM', '_blank');"
-   src="img/clube420.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Perfume Clube 420 Gold 100 Ml</h3>
-   </div>
-  
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2652436570-perfume-forum-movement-100ml-_JM', '_blank');"
-   src="img/forum.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Perfume Forum Movement 100ml</h3>
-   </div>
-   
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2651844544-perfume-arsenal-gilles-cantuel-100ml-_JM', '_blank');"
-   src="img/granada.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Perfume Arsenal Gilles Cantuel 100ml</h3>
-   </div>
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/antonio-banderas-the-icon-edt-100ml-para-homem/p/MLB18590572', '_blank');"
-   src="img/icon.png"
-   alt=""
-   class="trick__img"
-   /><br><br>
-   <h3 class="trick__title">AntonioBanderas The Icon EDT 100ML</h3>
-   </div>
-   
-
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2637296249-perfume-amour-toujours-100ml-_JM', '_blank');"
-   src="img/amour.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Amour Toujours 100ml</h3>
-   </div>
-   
-   <div class="trick__content">
-       <br><br>
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/joop-homme-edt-125ml-para-homem/p/MLB6093091', '_blank');"
-   src="img/joop.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Joop 125ml</h3>
-   </div>
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2638458027-perfume-billion-woman-100-ml-_JM', '_blank');"
-   src="img/billion2.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Billion Woman 100ml</h3>
-   </div>
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2620237684-perfume-queen-of-seduction-80-ml-_JM', '_blank');"
-   src="img/queen.png"
-   alt=""
-   class="trick__img"
-   /><br>
-   <h3 class="trick__title">Queen Of Seduction 80ML</h3>
-   </div>
-   
-   
-   <div class="trick__content">
-   <br>
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2007041316-perfume-la-petite-fleur-d-amour-_JM', '_blank');"
-   src="img/petite.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">LaPetite fleur d'amour 100ml</h3>
-   
-   </div>
-
-   <div class="trick__content">
-   <br><br>
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2611285689-perfume-scuderia-ferrari-red-75-ml-_JM', '_blank');"
-   src="img/ferrarired.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Ferrari Red 75ml</h3>
-   </div>
-   
-
-   <div class="trick__content">
-   <br><br>
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2222536919-polo-black-edt-masc--_JM', '_blank');"
-   src="img/polo.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Polo Black EDT 125ml</h3>
-   </div> 
-
-   <div class="trick__content">
-   <br><br>
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2611342042-perfume-billian-for-men-100ml-_JM', '_blank');"
-   src="img/billion.png"
-   alt=""
-   class="trick__img"
-   />
-   <br><br>
-   <h3 class="trick__title">Billion For Men 100ml</h3>
-   </div> 
-   
-   <div class="trick__content">
-   <br><br>
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2624436543-perfume-the-golden-secret-100-ml-_JM', '_blank');"
-   src="img/antonioBandera.png"
-   alt=""
-   class="trick__img"
-   />
-   <br><br>
-   <h3 class="trick__title">AntonioBanderas The Golden Secret 100ML</h3>
-   </div> 
-   
-  
-
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/gabriela-sabatini-edt-60ml-para-mulher/p/MLB6141503', '_blank');"
-   src="img/gabriela.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Gabriela Sabatini EDT 60ML </h3>
-   </div> 
-   
-   <div class="trick__content">
-   <br>
-   <br>
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2605759406-love-secret-vanilla-_JM', '_blank');"
-   src="img/vanilla.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Love Secret Kit Vanilla Hidratante</h3>
-   </div> 
-   
-   <!--<div class="trick__content">-->
-   <!--    <br>-->
-   <!--<img style="cursor: pointer;" onclick="window.open('https://www.mercadolivre.com.br/lacoste-l1212-blanc-edt-50ml-para-homem/p/MLB18645328?pdp_filters=seller_id:176774316', '_blank');"-->
-   <!--src="img/lacoste.png"-->
-   <!--alt=""-->
-   <!--class="trick__img"-->
-   <!--/>-->
-   <!--<br><br>-->
-   <!--<h3 class="trick__title">Lacoste Blanc EDT 50 ml</h3>-->
-   <!--</div> -->
-   
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2081580077-joop-hoomme-_JM', '_blank');"
-   src="img/joop.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Joop! Homme EDT 75ml</h3> 
-   
-   </div>
-
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2612260566-kit-udv-paris-for-men-100-ml200-ml-_JM', '_blank');"
-   src="img/udv.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Kit Udv Paris 100 Ml/200</h3>
-   
-   </div>
-
-   <div class="trick__content">
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2684806919-perfume-ferrari-black-125-ml-_JM', '_blank');"
-   src="img/ferrari.png"
-   alt=""
-   class="trick__img"
-   />
-   <h3 class="trick__title">Ferrari Scuderia Black 125ml</h3>
-   </div>
-   
+<main>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2746701357-paco-rabanne-1-miller-edt-200-ml-para-homens-_JM', '_blank');"
+    
+    src="img/one.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">One Million Pacco Rabanne 200ml</h3>
+    </div>
+    
+    
+    <div class="trick__content" >
+     <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2856268710-idle-l-parfum-lancme-75-ml-_JM', '_blank');"
+     src="img/idole.png"
+     alt=""
+     class="trick__img"
+     />
+     <h3 class="text-lg font-semibold">Idole Le Parfume Lancome 75 Ml</h3>
+     </div>
+     
+ 
+     <div class="trick__content" >
+     <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/calvin-klein-ck-everyone-edt-200ml-para-sem-gnero/p/MLB19050899', '_blank');"
+     src="img/calvin.png"
+     alt=""
+     class="trick__img"
+     />
+     <h3 class="text-lg font-semibold">Calvin Klein CK Everyone EDT 200Ml</h3>
+     </div>
+ 
+ 
+    <div class="trick__content" >
+     <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2854212677-perfume-cool-water-125-ml-_JM', '_blank');"
+     src="img/cool.png"
+     alt=""
+     class="trick__img"
+     />
+     <h3 class="text-lg font-semibold">Perfume Cool Water 125 Ml</h3>
+     </div>
+ 
+     <div class="trick__content" >
+       <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-1961555227-perfume-fantasy-britney-spears-_JM', '_blank');"
+       src="img/britney.png"
+       alt=""
+       class="trick__img"
+       />
+       <h3 class="text-lg font-semibold">Britney Spears Fantasy</h3>
+       </div>
+     
+       <div class="trick__content" >
+         <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2854251018-perfume-her-secret-kiss-80-ml-_JM', '_blank');"
+         src="img/hersecret3.png"
+         alt=""
+         class="trick__img"
+         />
+         <h3 class="text-lg font-semibold">Her Secret Kiss! 80ML</h3>
+         </div>
+ 
+         <div class="trick__content" >
+           <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/yves-saint-laurent-kouros-edt-100ml-para-homem/p/MLB6094029', '_blank');"
+           src="img/kouros.png"
+           alt=""
+           class="trick__img"
+           />
+           <h3 class="text-lg font-semibold">Yves Saint Laurent Kouros EDT 100 ml</h3>
+           </div>
+ 
+           <div class="trick__content" >
+             <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/montblanc-individuel-edt-75ml-para-homem/p/MLB3820215', '_blank');"
+             src="img/montblanc.png"
+             alt=""
+             class="trick__img"
+             />
+             <h3 class="text-lg font-semibold">Montblanc Individuel EDT 75 Ml</h3>
+             </div>
+ 
+             <div class="trick__content" >
+               <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/animale-for-men-edt-100ml-para-masculino/p/MLB6166109', '_blank');"
+               src="img/animale.png"
+               alt=""
+               class="trick__img"
+               />
+               <h3 class="text-lg font-semibold">Animale For Men 100Ml</h3>
+               </div>
+               
+ 
+                 <div class="trick__content" >
+                   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2105573110-perfume-black-extreme-_JM', '_blank');"
+                   src="img/everlast.png"
+                   alt=""
+                   class="trick__img"
+                   />
+                   <h3 class="text-lg font-semibold">Everlast Black Extreme+ Brinde</h3>
+                   </div>
+ 
+ 
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2759839134-amor-amor-cacharel-100ml-mulher-_JM', '_blank');"
+    src="img/amor.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Amor Amor Cacharel 100ml</h3>
+    </div>
+    
+      <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2759839900-king-of-seduction-absolut-200-ml-homem-_JM', '_blank');"
+    src="img/king3.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">King Of Seduction Absolut 200 Ml</h3>
+    </div>
+    
     <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2041847214-perfume-coeur-frivoleeau-de-parfum-_JM', '_blank');"
-   src="img/coeur.png"
-   alt=""
-   class="trick__img"/><br><br>
-   <h3 class="trick__title">Coeur Frivole 100ml</h3>
-   </div> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1817760613-perfumes-importados-da-linha-antnio-bandeira-original-_JM', '_blank');"
+    src="img/king.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">King Of Seduction 200ml</h3>
+    </div>
+    
+       <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2786855531-king-of-seduction-100-ml-homem-_JM', '_blank');"
+    src="img/king.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">King Of Seduction 100ml</h3>
+    </div>
+    
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2784650720-azzaro-sport-100-ml-homem-_JM', '_blank');"
+    src="img/azzarosport.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Azzaro Sport 100 Ml</h3>
+    </div>
+    
+      <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2770720993-azzaro-pour-homme-200-ml-_JM', '_blank');"
+    src="img/azzaro.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Azzaro pour Homme EDT 200 ml</h3>
+    </div>
+    
+       <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2746708531-carolina-herrera-good-girl-femininoedp-80-ml-_JM', '_blank');"
+    src="img/goodgirl.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Good Girl 80ml</h3>
+    </div>
+    
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2678924125-perfume-oso-perfect-men-100ml-_JM', '_blank');"
+    src="img/oso.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Perfume Oso Perfect Men 100ml</h3>
+    </div>
+    
+      <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2747348429-lancme-la-vie-est-belle-edp-75-mlmulher-_JM', '_blank');"
+    src="img/lavie.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">La Vie Est Belle Edp 75 Ml</h3>
+    </div>
+    
+      <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2747342902-carolina-herrera-212-vip-200-mlmasculino-_JM', '_blank');"
+    src="img/vip.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Carolina Herrera 212 Vip 200 Ml</h3>
+    </div>
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2652407384-perfume-silver-laght-100ml-_JM', '_blank');"
+    src="img/silverlight.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Perfume Silver Light 100ml</h3>
+    </div>
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2733437704-perfume-fantasy-midnight-100-ml-_JM', '_blank');"
+    src="img/midnight.png"
+    alt=""
+    class="trick__img"
+    />
+    <br><br>
+    <h3 class="text-lg font-semibold">Perfume Fantasy Midnight 100 Ml</h3>
+    </div>
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2735459956-kit-the-golden-secret-p-100ml-d-150-ml-_JM', '_blank');"
+    src="img/kit2.png"
+    alt=""
+    class="trick__img"
+    /><br><br><br>
+    <h3 class="text-lg font-semibold">Kit The Golden Secret 100ml 150 Ml</h3>
+    </div>
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-1817757815-promocoperfume-importado-antnio-bandeira-_JM', '_blank');"
+    src="img/silver2.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Antonio Banderas 100Ml</h3>
+    </div>
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/antonio-banderas-the-secret-edt-200ml-para-homem/p/MLB19175924', '_blank');"
+    src="img/silver2.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">200Ml Antonio Banderas </h3>
+    </div>
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1961549634-perfume-silver-scent-100-ml-intense-_JM', '_blank');"
+    src="img/scent.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Perfume Silver Scent Intense 100 Ml</h3>
+    </div>
+    
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2678967214-perfume-clube-420-gold-100-ml-_JM', '_blank');"
+    src="img/clube420.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Perfume Clube 420 Gold 100 Ml</h3>
+    </div>
    
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2611475075-perfume-club420-men-100-ml-_JM', '_blank');"
-   src="img/club.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Club 420 Exclusive 100ml</h3>
-   </div>
-
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2022106139-perfume-juliana-paes-glam-_JM', '_blank');"
-   src="img/juliana.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Juliana Paes Glam 100ml</h3>
-   </div>
-
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2041840825-perfume-miss-new-brand-_JM', '_blank');"
-   src="img/miss.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Miss For Women</h3>
-   </div>
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2652436570-perfume-forum-movement-100ml-_JM', '_blank');"
+    src="img/forum.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Perfume Forum Movement 100ml</h3>
+    </div>
+    
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2651844544-perfume-arsenal-gilles-cantuel-100ml-_JM', '_blank');"
+    src="img/granada.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Perfume Arsenal Gilles Cantuel 100ml</h3>
+    </div>
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/antonio-banderas-the-icon-edt-100ml-para-homem/p/MLB18590572', '_blank');"
+    src="img/icon.png"
+    alt=""
+    class="trick__img"
+    /><br><br>
+    <h3 class="text-lg font-semibold">AntonioBanderas The Icon EDT 100ML</h3>
+    </div>
+    
+ 
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2637296249-perfume-amour-toujours-100ml-_JM', '_blank');"
+    src="img/amour.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Amour Toujours 100ml</h3>
+    </div>
+    
+    <div class="trick__content" >
+        <br><br>
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/joop-homme-edt-125ml-para-homem/p/MLB6093091', '_blank');"
+    src="img/joop.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Joop 125ml</h3>
+    </div>
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2638458027-perfume-billion-woman-100-ml-_JM', '_blank');"
+    src="img/billion2.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Billion Woman 100ml</h3>
+    </div>
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2620237684-perfume-queen-of-seduction-80-ml-_JM', '_blank');"
+    src="img/queen.png"
+    alt=""
+    class="trick__img"
+    /><br>
+    <h3 class="text-lg font-semibold">Queen Of Seduction 80ML</h3>
+    </div>
+    
+    
+    <div class="trick__content" >
+    <br>
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2007041316-perfume-la-petite-fleur-d-amour-_JM', '_blank');"
+    src="img/petite.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">LaPetite fleur d'amour 100ml</h3>
+    
+    </div>
+ 
+    <div class="trick__content" >
+    <br><br>
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2611285689-perfume-scuderia-ferrari-red-75-ml-_JM', '_blank');"
+    src="img/ferrarired.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Ferrari Red 75ml</h3>
+    </div>
+    
+ 
+    <div class="trick__content" >
+    <br><br>
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2222536919-polo-black-edt-masc--_JM', '_blank');"
+    src="img/polo.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Polo Black EDT 125ml</h3>
+    </div> 
+ 
+    <div class="trick__content" >
+    <br><br>
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2611342042-perfume-billian-for-men-100ml-_JM', '_blank');"
+    src="img/billion.png"
+    alt=""
+    class="trick__img"
+    />
+    <br><br>
+    <h3 class="text-lg font-semibold">Billion For Men 100ml</h3>
+    </div> 
+    
+    <div class="trick__content" >
+    <br><br>
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2624436543-perfume-the-golden-secret-100-ml-_JM', '_blank');"
+    src="img/antonioBandera.png"
+    alt=""
+    class="trick__img"
+    />
+    <br><br>
+    <h3 class="text-lg font-semibold">AntonioBanderas The Golden Secret 100ML</h3>
+    </div> 
+    
    
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1817757678-so-hojeperfume-importado-da-linha-antnio-bandeira-_JM', '_blank');"
-   src="img/roxo.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Her Golden Desire 80ml</h3>
-   </div>
+ 
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/gabriela-sabatini-edt-60ml-para-mulher/p/MLB6141503', '_blank');"
+    src="img/gabriela.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Gabriela Sabatini EDT 60ML </h3>
+    </div> 
+    
+    <div class="trick__content" >
+    <br>
+    <br>
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2605759406-love-secret-vanilla-_JM', '_blank');"
+    src="img/vanilla.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Love Secret Kit Vanilla Hidratante</h3>
+    </div> 
+    
+    <!--<div class="trick__content" >-->
+    <!--    <br>-->
+    <!--<img style="cursor: pointer;" onclick="window.open('https://www.mercadolivre.com.br/lacoste-l1212-blanc-edt-50ml-para-homem/p/MLB18645328?pdp_filters=seller_id:176774316', '_blank');"-->
+    <!--src="img/lacoste.png"-->
+    <!--alt=""-->
+    <!--class="trick__img"-->
+    <!--/>-->
+    <!--<br><br>-->
+    <!--<h3 class="text-lg font-semibold">Lacoste Blanc EDT 50 ml</h3>-->
+    <!--</div> -->
+    
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2081580077-joop-hoomme-_JM', '_blank');"
+    src="img/joop.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Joop! Homme EDT 75ml</h3> 
+    
+    </div>
+ 
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2612260566-kit-udv-paris-for-men-100-ml200-ml-_JM', '_blank');"
+    src="img/udv.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Kit Udv Paris 100 Ml/200</h3>
+    
+    </div>
+ 
+    <div class="trick__content" >
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2684806919-perfume-ferrari-black-125-ml-_JM', '_blank');"
+    src="img/ferrari.png"
+    alt=""
+    class="trick__img"
+    />
+    <h3 class="text-lg font-semibold">Ferrari Scuderia Black 125ml</h3>
+    </div>
+    
+     <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2041847214-perfume-coeur-frivoleeau-de-parfum-_JM', '_blank');"
+    src="img/coeur.png"
+    alt=""
+    class="trick__img"/><br><br>
+    <h3 class="text-lg font-semibold">Coeur Frivole 100ml</h3>
+    </div> 
+    
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2611475075-perfume-club420-men-100-ml-_JM', '_blank');"
+    src="img/club.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Club 420 Exclusive 100ml</h3>
+    </div>
+ 
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2022106139-perfume-juliana-paes-glam-_JM', '_blank');"
+    src="img/juliana.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Juliana Paes Glam 100ml</h3>
+    </div>
+ 
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2041840825-perfume-miss-new-brand-_JM', '_blank');"
+    src="img/miss.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Miss For Women</h3>
+    </div>
+    
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1817757678-so-hojeperfume-importado-da-linha-antnio-bandeira-_JM', '_blank');"
+    src="img/roxo.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Her Golden Desire 80ml</h3>
+    </div>
+ 
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1961549634-perfume-silver-scent-100-ml-_JM', '_blank');"
+    src="img/scent.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Jaques Bogart Silver 100ml</h3>
+    </div>
+ 
+ 
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2007020346-perfume-wild-adventure-_JM', '_blank');"
+    src="img/wild.png"
+    alt=""
+    class="trick__img"/>
+    <br>
+    <h3 class="text-lg font-semibold">Wild Adventure 100ml</h3>
+    
+    </div>
+    
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2611306682-perfume-ger-golden-secret-80-ml-_JM', '_blank');"
+    src="img/hergolden.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Her SecretTempation 80ML EDT </h3>
+    
+    </div>
+    
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1952965324-perfume-importado-hugo-man-125-ml-_JM', '_blank');"
+    src="img/hugo.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Hugo Boss Man 125ML</h3>
+    
+    </div>
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/antonio-banderas-the-golden-secret-edt-200ml-para-homem/p/MLB6140284', '_blank');"
+    src="img/antonioBandera.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Antonio Banderas Eau de Toilette 200ml</h3>
+    
+    </div> 
+    <div class="trick__content" >
+    <br>
+    <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-1966784273-la-petite-fleur-romantique-_JM', '_blank');"
+    src="img/petite2.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">La Petit Fleur Romantique 100ml</h3>    
+    </div>
+ 
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1966787367-power-boost-for-men-_JM', '_blank');"
+    src="img/powerboost.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Power Boost 100ml</h3>
+    
+    </div> 
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1966773274-hugo-just-different-_JM', '_blank');"
+    src="img/hugojust.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">HugoBoss Just 125ml</h3>    
+    </div>
+ 
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1819117685-perfume-importado-da-linha-antnio-bandeira100-original-_JM', '_blank');"
+    src="img/power.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold">Power of Seduction 100ml</h3>    
+    </div>
 
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1961549634-perfume-silver-scent-100-ml-_JM', '_blank');"
-   src="img/scent.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Jaques Bogart Silver 100ml</h3>
-   </div>
+    <div class="trick__content"> 
+    <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1910915124-her-secret-desire-antnio-bandeira-_JM', '_blank');"
+    src="img/roxokit.png"
+    alt=""
+    class="trick__img"/>
+    <h3 class="text-lg font-semibold"> Her Secret Desire KIT 80ml</h3>
+    </div>
+    </div>
+ </section>
 
+    <footer class="bg-white shadow-md mt-16">
+        <div class="container mx-auto py-8 flex flex-wrap justify-between items-center">
+            <div class="text-gray-700">
+                <a href="#" class="text-gray-700 hover:text-gray-900">MizaShow</a>
+                <p>Miza Show Store ;) novidades chegando!</p>
+            </div>
+            <div class="space-x-4 text-gray-700">
+                <a href="https://www.instagram.com/mizashow.of" class="hover:text-gray-900">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <!-- Mais links de mídia social aqui -->
+            </div>
+        </div>
+    </footer>
 
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2007020346-perfume-wild-adventure-_JM', '_blank');"
-   src="img/wild.png"
-   alt=""
-   class="trick__img"/>
-   <br>
-   <h3 class="trick__title">Wild Adventure 100ml</h3>
-   
-   </div>
-   
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2611306682-perfume-ger-golden-secret-80-ml-_JM', '_blank');"
-   src="img/hergolden.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Her SecretTempation 80ML EDT </h3>
-   
-   </div>
-   
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1952965324-perfume-importado-hugo-man-125-ml-_JM', '_blank');"
-   src="img/hugo.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Hugo Boss Man 125ML</h3>
-   
-   </div>
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/antonio-banderas-the-golden-secret-edt-200ml-para-homem/p/MLB6140284', '_blank');"
-   src="img/antonioBandera.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Antonio Banderas Eau de Toilette 200ml</h3>
-   
-   </div> 
-   <div class="trick__content">
-   <br>
-   <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-1966784273-la-petite-fleur-romantique-_JM', '_blank');"
-   src="img/petite2.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">La Petit Fleur Romantique 100ml</h3>    
-   </div>
+    <script>
+        var carousel = document.getElementById('carousel');
+        var items = carousel.querySelectorAll('.carousel-item');
+        var index = 0;
 
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1966787367-power-boost-for-men-_JM', '_blank');"
-   src="img/powerboost.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Power Boost 100ml</h3>
-   
-   </div> 
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1966773274-hugo-just-different-_JM', '_blank');"
-   src="img/hugojust.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">HugoBoss Just 125ml</h3>    
-   </div>
+        setInterval(function () {
+            items[index].style.transform = 'translateX(-100%)';
+            index = (index + 1) % items.length;
+            items[index].style.transform = 'translateX(0)';
+        }, 1000);
+    </script>
 
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1819117685-perfume-importado-da-linha-antnio-bandeira100-original-_JM', '_blank');"
-   src="img/power.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title">Power of Seduction 100ml</h3>    
-   </div>
-
-   <!--<div class="trick__content"> -->
-   <!--<img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1961555227-perfume-fantasy-britney-spears-_JM', '_blank');"-->
-   <!--src="img/britney.png"-->
-   <!--alt=""-->
-   <!--class="trick__img"/>-->
-   <!--<h3 class="trick__title">BritneySpears Fantasy 100ML</h3>    -->
-   <!--</div>-->
-
-   <div class="trick__content"> 
-   <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-1910915124-her-secret-desire-antnio-bandeira-_JM', '_blank');"
-   src="img/roxokit.png"
-   alt=""
-   class="trick__img"/>
-   <h3 class="trick__title"> Her Secret Desire KIT 80ml</h3>
-   </div>
-   </div>
-</section>
-
-
-<section class="" id="sobre">
-<h2 class="section__title">7 anos no ramo de Perfumes<br>Compras Seguras, no MercadoLivre</h2>
-</section> 
-</main>
-<!--==================== FOOTER ====================-->
-<footer class="footer">
-<div class="footer__container container grid">
-<div class="footer__content">
-<a href="#" class="nav__logo"> 
-MizaShow 
-</a> 
-
-<p class="footer__description">
-Miza Show Store ;) novidades chegando! <br />
-</p>
-
-<div class="footer__social"> 
-
-<a
-href="https://www.instagram.com/mizashow.of"
-target="_blank"
-class="footer__social-link"
->
-<i class="bx bxl-instagram-alt"></i>
-</a>
-<a
-href="https://wa.me/5511986824480"
-target="_blank"
-class="footer__social-link"
->
-<i class="bx bxl-whatsapp"></i>
-</a>
-
-<a
-href="https://twitter.com/mizaels23311601"
-target="_blank"
-class="footer__social-link"
->
-<i class="bx bxl-twitter"></i>
-</a>
-
-<a
-href="https://www.tiktok.com/@mizashow.of"
-target="_blank"
-class="footer__social-link"
->
-<i class="bx bxl-tiktok"></i>
-</a>
-
-<a
-href="https://www.youtube.com/channel/UC2Vn19Tf9PL9VuNq-yQkNJg/videos"
-target="_blank"
-class="footer__social-link"
->
-<i class="bx bxl-youtube"></i>
-</a>
-
-</div>
-</div> 
-
-
-<div class="footer__content">
-<h3 class="footer__title">mizaelaraujoshow@gmail.com</h3>
-<h6 class="footer__title">Nome Civil: Mizael Araujo dos Santos</h6>
-<h6 class="footer__title">CNPJ 47.442.022/0001-75</h6>
-<h6 class="footer__title">NOME FANTASIA MIZASHOW</h6>
-<h6 class="footer__title">NOME EMPRESARIAL Mizael Araujo dos Santos</h6>
-
-</div> 
-
-</div>
-
-<h3 class="footer__copy">&#169; Github: Synaxis Full Stack FreeLance Developer Caio Torquato</h3>
-
-</footer>
-
-<!--=============== SCROLL UP ===============-->
-<a href="#" class="scrollup" id="scroll-up">
-<i class="bx bx-up-arrow-alt scrollup__icon"></i>
-</a>
-
-<!--=============== SCROLL REVEAL ===============-->
-<script src="assets/js/scrollreveal.min.js"></script>
-
-<!--=============== SWIPER JS ===============-->
-<script src="assets/js/swiper-bundle.min.js"></script>
-
-<!--=============== MAIN JS ===============-->
-
-<script src="assets/js/main.js"></script>
 </body>
+
 </html>
