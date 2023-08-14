@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="google" content="notranslate" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MizaShow Perfumes</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!-- Adicionado para ícones -->
+    <link rel="stylesheet" href="assets/css/styles.css">
     <style>
         .carousel-container {
             overflow: hidden;
@@ -22,49 +25,115 @@
             max-width: 100%;
             height: auto;
         }
-    
-        
-    nav.container.mx-auto.py-4.flex.justify-between.items-center {
-        background-color: blue;
-    }
-    
-    header.bg-blue.shadow-md {
-        background-color: blue;
-    
-    }
-    
-    a.text-xl.font-bold.text-gray-800 {
-      font-size: 2.2rem;
-      color: white
-    }
-    
-    a.text-xl.font-bold.text-gray-800:hover {
-      font-size: 2.4rem;
-    }
-    
-    
-    div.bg-white.shadow-lg.p-4.rounded.cursor-pointer {
-      border-radius: 10px;
-    }
-    
+
+        /* Estilos da Navbar (ajustados conforme necessário) */
+        nav.container.mx-auto.py-4.flex.justify-between.items-center {
+            background-color: blue;
+        }
+
+        /* Outros estilos personalizados aqui */
     </style>
 </head>
 
-<body class="antialiased text-gray-900 bg-gray-100">
-    <header class="bg-blue shadow-md">
-        <nav class="container mx-auto py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-gray-800">Mizashow</a>
-            <div class="space-x-6">
-                <a href="#trick" class="text-gray-700 hover:text-gray-900">Perfumes</a>
-                <a href="https://armi5338416.mercadoshops.com.br/nossos-produtos" class="text-gray-700 hover:text-gray-900">MercadoLivre</a>
-                <!-- Mais links aqui -->
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="images/logo.png" alt="" class="nav__logo-img">
+                Mizashow
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                     <li class="nav__item">
+   <a href="#trick" class="nav__link active-link">Perfumes</a>
+   </li>
+   <li class="nav__item">
+   <a href="https://armi5338416.mercadoshops.com.br/nossos-produtos" class="nav__link">MercadoLivre</a>
+   </li>
+   
+   <li class="nav__item">
+   <a href="https://linktr.ee/mizashow" class="nav__link">Redes Sociais</a>
+   </li>
+   
+   <li class="nav__item">
+   <a href="https://linktr.ee/mizashow" class="nav__link">Encomenda</a>
+   </li>
+   
+   <li class="nav__item">
+   <a href="https://www.mercadolivre.com.br/perfil/ARMI5338416" class="nav__link">Ofertas!</a>
+   </li>
+               </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="assets/img/nav-img.png" alt="" class="nav__img">
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
             </div>
         </nav>
     </header>
+<section class="home container mx-auto" id="home">
+    <div class="js-Carousel w-full overflow-hidden" id="carousel">
+        <ul class="carousel-container flex transition-all duration-500" style="width: 3000px;">
+            <li class="carousel-item"><img src="img/midnight.png" alt=""></li>
+            <li class="carousel-item"><img src="img/kit2.png" alt=""></li>
+            <li class="carousel-item"><img src="img/goodgirl.png" alt=""></li>
+            <li class="carousel-item"><img src="img/oso.png" alt=""></li>
+            <li class="carousel-item"><img src="img/one.png" alt=""></li>
+            <li class="carousel-item"><img src="img/fairy.png" alt=""></li>
+            <li class="carousel-item"><img src="img/clube420.png" alt=""></li>
+            <li class="carousel-item"><img src="img/azzarosport.png" alt=""></li>
+            <li class="carousel-item"><img src="img/ferrarired.png" alt=""></li>
+            <li class="carousel-item"><img src="img/coeur.png" alt=""></li>
+        </ul>
+    </div>
+</section>
+
+<style>
+    .carousel-container {
+        white-space: nowrap;
+        transition: transform 0.5s ease-out;
+    }
+
+    .carousel-item {
+        display: inline-block;
+        width: 300px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+<script>
+    var carouselContainer = document.querySelector('.carousel-container');
+    var items = carouselContainer.querySelectorAll('.carousel-item');
+    var index = 0;
+
+    setInterval(function() {
+        carouselContainer.style.transform = 'translateX(' + (-index * 300) + 'px)';
+        index = (index + 1) % items.length;
+    }, 3000);
+</script>
+
+
+     <section class="" id="sobre">
+<h2 class="section__title">As melhores ofertas !</h2>
+<h2 class="section__title">Entregas para todo o Brasil. basta clicar no perfume ;)</h2>
+
+</section> 
 
 
 <main>
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<section class="section trick" id="trick">
+
+   <div class="perfume__container grid">
     <div class="trick__content" >
     <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2746701357-paco-rabanne-1-miller-edt-200-ml-para-homens-_JM', '_blank');"
     
@@ -161,7 +230,6 @@
                    </div>
  
  
-    
     <div class="trick__content" >
     <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/MLB-2759839134-amor-amor-cacharel-100ml-mulher-_JM', '_blank');"
     src="img/amor.png"
@@ -435,9 +503,6 @@
     <h3 class="text-lg font-semibold">AntonioBanderas The Golden Secret 100ML</h3>
     </div> 
     
-   
- 
-    
     <div class="trick__content" >
     <img style="cursor: pointer;" onclick="window.open('https://armi5338416.mercadoshops.com.br/gabriela-sabatini-edt-60ml-para-mulher/p/MLB6141503', '_blank');"
     src="img/gabriela.png"
@@ -457,17 +522,6 @@
     />
     <h3 class="text-lg font-semibold">Love Secret Kit Vanilla Hidratante</h3>
     </div> 
-    
-    <!--<div class="trick__content" >-->
-    <!--    <br>-->
-    <!--<img style="cursor: pointer;" onclick="window.open('https://www.mercadolivre.com.br/lacoste-l1212-blanc-edt-50ml-para-homem/p/MLB18645328?pdp_filters=seller_id:176774316', '_blank');"-->
-    <!--src="img/lacoste.png"-->
-    <!--alt=""-->
-    <!--class="trick__img"-->
-    <!--/>-->
-    <!--<br><br>-->
-    <!--<h3 class="text-lg font-semibold">Lacoste Blanc EDT 50 ml</h3>-->
-    <!--</div> -->
     
     <div class="trick__content" >
     <img style="cursor: pointer;" onclick="window.open('https://produto.mercadolivre.com.br/MLB-2081580077-joop-hoomme-_JM', '_blank');"
@@ -625,20 +679,75 @@
     </div>
  </section>
 
-    <footer class="bg-white shadow-md mt-16">
-        <div class="container mx-auto py-8 flex flex-wrap justify-between items-center">
-            <div class="text-gray-700">
-                <a href="#" class="text-gray-700 hover:text-gray-900">MizaShow</a>
-                <p>Miza Show Store ;) novidades chegando!</p>
-            </div>
-            <div class="space-x-4 text-gray-700">
-                <a href="https://www.instagram.com/mizashow.of" class="hover:text-gray-900">
-                    <i class="bx bxl-instagram-alt"></i>
-                </a>
-                <!-- Mais links de mídia social aqui -->
-            </div>
-        </div>
-    </footer>
+<footer class="footer">
+<div class="footer__container container grid">
+<div class="footer__content">
+<a href="#" class="nav__logo"> 
+MizaShow 
+</a> 
+
+<p class="footer__description">
+Miza Show Store ;) novidades chegando! <br />
+</p>
+
+<div class="footer__social"> 
+
+<a
+href="https://www.instagram.com/mizashow.of"
+target="_blank"
+class="footer__social-link"
+>
+<i class="bx bxl-instagram-alt"></i>
+</a>
+<a
+href="https://wa.me/5511986824480"
+target="_blank"
+class="footer__social-link"
+>
+<i class="bx bxl-whatsapp"></i>
+</a>
+
+<a
+href="https://twitter.com/mizaels23311601"
+target="_blank"
+class="footer__social-link"
+>
+<i class="bx bxl-twitter"></i>
+</a>
+
+<a
+href="https://www.tiktok.com/@mizashow.of"
+target="_blank"
+class="footer__social-link"
+>
+<i class="bx bxl-tiktok"></i>
+</a>
+
+<a
+href="https://www.youtube.com/channel/UC2Vn19Tf9PL9VuNq-yQkNJg/videos"
+target="_blank"
+class="footer__social-link"
+>
+<i class="bx bxl-youtube"></i>
+</a>
+
+</div>
+</div> 
+
+<div class="footer__content">
+<h3 class="footer__title">mizaelaraujoshow@gmail.com</h3>
+<h6 class="footer__title">Nome Civil: Mizael Araujo dos Santos</h6>
+<h6 class="footer__title">CNPJ 47.442.022/0001-75</h6>
+<h6 class="footer__title">NOME FANTASIA MIZASHOW</h6>
+<h6 class="footer__title">NOME EMPRESARIAL Mizael Araujo dos Santos</h6>
+
+</div> 
+
+</div>
+
+<h3 class="footer__copy">&#169; Github: Synaxis Full Stack FreeLance Developer Caio Torquato</h3>
+
+</footer>
 
     <script>
         var carousel = document.getElementById('carousel');
@@ -651,7 +760,7 @@
             items[index].style.transform = 'translateX(0)';
         }, 1000);
     </script>
-
+</main>
 </body>
 
 </html>
