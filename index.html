@@ -1,52 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="google" content="notranslate" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MizaShow Perfumes</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!-- Adicionado para ícones -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <style>
-        .carousel-container {
-            overflow: hidden;
-            white-space: nowrap;
-        }
+<meta charset="UTF-8">
+<!--=========== FAVICON ============-->
 
-        .carousel-item {
-            display: inline-block;
-            width: 150px;
-            transition: transform 0.3s ease-out;
-        }
+<meta name="google" value="notranslate">
+<!--=========== BOXICONS ============-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-        .carousel-container img {
-            max-width: 100%;
-            height: auto;
-        }
+<!--=========== SWIPER CSS ============-->
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-        /* Estilos da Navbar (ajustados conforme necessário) */
-        nav.container.mx-auto.py-4.flex.justify-between.items-center {
-            background-color: blue;
-        }
+<!--=========== CSS ============-->
+<link rel="stylesheet" href="assets/css/styles.css">
 
-        /* Outros estilos personalizados aqui */
-    </style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<title>MizaShow Perfumes</title>
 </head>
+<body style=" -webkit-font-smoothing: subpixel-antialiased;
+-moz-osx-font-smoothing: auto;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;">
 
-<body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="images/logo.png" alt="" class="nav__logo-img">
-                Mizashow
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                     <li class="nav__item">
-   <a href="#trick" class="nav__link active-link">Perfumes</a>
+<!--========================== HEADER =========================-->
+<header class="header" id="header">
+   <nav class="nav container">
+   <a href="#" class="nav__logo">MizaShow</a>
+   
+   <div class="nav__menu" id="nav-menu">
+   <ul class="nav__list">
+   
+   <li class="nav__item">
+   <a href="#trick" class="nav__link">Perfumes</a>
    </li>
    <li class="nav__item">
    <a href="https://armi5338416.mercadoshops.com.br/nossos-produtos" class="nav__link">MercadoLivre</a>
@@ -63,65 +52,65 @@
    <li class="nav__item">
    <a href="https://www.mercadolivre.com.br/perfil/ARMI5338416" class="nav__link">Ofertas!</a>
    </li>
-               </ul>
+   </ul>
+   
+   
+   <div class="nav__close" id="nav-close">
+   <i class="bx bx-x"></i>
+   </div>
+   
+   <img src="assets/img/nav-img.png" alt="" class="nav__img"/>
+   </div>
+   
+   <div class="nav__toggle" id="nav-toggle">
+   <i class="bx bx-grid-alt"></i>
+   <h1 class="TitleMenuMobile">Menu</h1>
+   </div>
+   </nav>
+</header>
 
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
 
-                <img src="assets/img/nav-img.png" alt="" class="nav__img">
-            </div>
+<main class="main">
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-grid-alt'></i>
-            </div>
-        </nav>
-    </header>
-<section class="home container mx-auto" id="home">
-    <div class="js-Carousel w-full overflow-hidden" id="carousel">
-        <ul class="carousel-container flex transition-all duration-500" style="width: 3000px;">
-            <li class="carousel-item"><img src="img/midnight.png" alt=""></li>
-            <li class="carousel-item"><img src="img/kit2.png" alt=""></li>
-            <li class="carousel-item"><img src="img/goodgirl.png" alt=""></li>
-            <li class="carousel-item"><img src="img/oso.png" alt=""></li>
-            <li class="carousel-item"><img src="img/one.png" alt=""></li>
-            <li class="carousel-item"><img src="img/fairy.png" alt=""></li>
-            <li class="carousel-item"><img src="img/clube420.png" alt=""></li>
-            <li class="carousel-item"><img src="img/azzarosport.png" alt=""></li>
-            <li class="carousel-item"><img src="img/ferrarired.png" alt=""></li>
-            <li class="carousel-item"><img src="img/coeur.png" alt=""></li>
-        </ul>
-    </div>
+<!--================= HOME =======================-->
+<section class="home container" id="home">
+<h1>MS Store</h1>
+
+<div class="js-Carousel" id="carousel">
+
+<ul>
+   <li><img src="img/calvin.png" alt=""></li>
+   <li><img src="img/midnight.png" alt=""></li>
+   <li><img src="img/quasar.png" alt=""></li>
+       <li><img src="img/kit2.png" alt=""></li>
+<li><img src="img/goodgirl.png" alt=""></li>
+   <li><img src="img/oso.png" alt=""></li>
+   <li><img src="img/one.png" alt=""></li>
+      <li><img src="img/fairy.png" alt=""></li>
+
+       <li><img src="img/clube420.png" alt=""></li>
+   <li><img src="img/azzarosport.png" alt=""></li>
+
+   <li><img src="img/ferrarired.png" alt=""></li>
+   <li><img src="img/coeur.png" alt=""></li>
+</ul>
+
+</div>
 </section>
 
-<style>
-    .carousel-container {
-        white-space: nowrap;
-        transition: transform 0.5s ease-out;
-    }
 
-    .carousel-item {
-        display: inline-block;
-        width: 300px;
-    }
 
-    .carousel-item img {
-        width: 100%;
-        height: auto;
-    }
-</style>
-
+<script src="carousel.js"></script>
 <script>
-    var carouselContainer = document.querySelector('.carousel-container');
-    var items = carouselContainer.querySelectorAll('.carousel-item');
-    var index = 0;
-
-    setInterval(function() {
-        carouselContainer.style.transform = 'translateX(' + (-index * 300) + 'px)';
-        index = (index + 1) % items.length;
-    }, 3000);
-</script>
-
+var carousel = new Carousel({
+elem: 'carousel',
+dots: true,
+arrows: false,
+buttons: false,
+autoplay: true,
+infinite: true
+});
+</script> 
 
      <section class="" id="sobre">
 <h2 class="section__title">As melhores ofertas !</h2>
